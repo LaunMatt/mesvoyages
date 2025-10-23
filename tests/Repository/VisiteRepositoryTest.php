@@ -46,7 +46,7 @@ class VisiteRepositoryTest extends KernelTestCase{
         $repository->add($visite, true);
         $nbVisites = $repository->count([]);
         $repository->remove($visite, true);
-        $this->assertEquals($nbVisites - 1, $repository->count([]), "erreur lors de la suppression");        
+        $this->assertEquals($nbVisites - 1, $repository->count([]), "erreur lors de la suppression");
     }
     
     public function testFindByEqualValue(){
@@ -57,6 +57,5 @@ class VisiteRepositoryTest extends KernelTestCase{
         $nbVisites = count($visites);
         $this->assertEquals(1, $nbVisites);
         $this->assertEquals("New York", $visites[0]->getVille());
-        
     }
 }

@@ -21,7 +21,7 @@ class AccueilController extends AbstractController {
     private $repository;
 
     /**
-     * 
+     *
      * @param VisiteRepository $repository
      */
     public function __construct(VisiteRepository $repository) {

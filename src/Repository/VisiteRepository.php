@@ -60,7 +60,7 @@ class VisiteRepository extends ServiceEntityRepository
     public function findAllLasted($nb) : array {
         return $this->createQueryBuilder('v') // alias de la table
            ->orderBy('v.datecreation', 'DESC')
-           ->setMaxResults($nb)     
+           ->setMaxResults($nb)
            ->getQuery()
            ->getResult();
     }
